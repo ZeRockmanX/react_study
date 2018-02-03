@@ -1,0 +1,61 @@
+安装 nodejs npm
+https://nodejs.org/en/
+
+安装 Atom 编辑器
+https://atom.io/
+
+Atom效果
+添加windows path -> C:\Users\Administrator\AppData\Local\atom
+安装插件
+1、atom的配置放在C:\Users\Administrator\.atom目录下。插件安装在.atom\packages目录下；
+2、通过cd .atom/packages进入包安装目录
+3、通过git clone https://github.com/JoelBesada/activate-power-mode.git
+下载插件
+4、下面进入插件目录，执行安装命令
+$cd activate-power-mode
+$npm install
+ctrl+alt+o激活
+
+file->setting->搜索jsx 安装 language-jabascript-jsx （jsx语法高亮）
+
+CMD 代理
+set http_proxy=proxysv:80
+set http_proxy=http://proxy_user:proxy_password@proxysv:80
+
+Git代理设置
+类似，git设置代理如下：
+git config --global http.proxy http://proxysv:80
+git config --global http.proxy http://proxy_user:proxy_password@proxy_ip_or_fqdn:8080
+设置完成后，可以通过如下命令来查看设置是否生效：
+git config --get --global http.proxy
+删除代理设置，使用：
+git config --global --unset http.proxy
+
+NPM代理设置
+npm设置代理方法如下：
+npm config set proxy=proxysv:80
+npm config set https-proxy https://proxysv:80
+npm config set proxy=http://proxy_user:proxy_password@proxy_ip_or_fqdn:8080
+
+新建项目命令，在自定义好的目录文件夹下运行
+npm init
+ISC 配置填写 MIT
+最后yes后出现package.json配置文件。
+
+atom .
+atom编辑器自动加载这个项目
+
+安装browser调试器
+npm install --g browser-sync
+npm install --save browser-sync （安装在当前目录下面）
+在项目中的"scripts": {}处添加：
+"dev":"browser-sync start --server --files *.*"
+*.*表示调试器观察所有文件
+dev表示自定义启动名，比如npm run dev
+
+运行:
+npm run dev
+
+chrome调试安装react插件
+新版本 var manual = ReactDOM.render(...)
+不能使用manual.update()调试调用，而必须使用 $r.update()调用
