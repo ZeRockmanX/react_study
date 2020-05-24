@@ -22,8 +22,13 @@ import ReactDOM from 'react-dom'
 //ReactDOM.render(<Tx04 />, document.getElementById('root'))
 
 //踩坑 1,注释 2,css引用 3,className 4,输入带html的数据 5,forhtml
-import Tx05 from './tx05'
-ReactDOM.render(<Tx05 />, document.getElementById('root'))
+//import Tx05 from './tx05'
+//ReactDOM.render(<Tx05 />, document.getElementById('root'))
 
-//import Search from './Search'
-//ReactDOM.render(<Search />, document.getElementById('root'))
+//快速搭建基本框架 Simple React Snippets
+//import Tx06 from './tx06'
+//ReactDOM.render(<Tx06 />, document.getElementById('root'))
+
+//父子组件拆分
+import Tx07 from './tx07'
+ReactDOM.render(<Tx07 />, document.getElementById('root'))

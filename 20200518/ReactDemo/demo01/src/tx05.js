@@ -35,7 +35,7 @@ export default class Tx05 extends React.Component {
                 </div>
                 <ul>
                     {
-                        // map(value,key),key要展现出来，不然嘿呦warning警告
+                        // map(value,key),key要展现出来，不然会有warning警告
                         this.state.list.map((item, index) => {
                             return (
                                 <li
