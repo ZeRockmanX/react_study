@@ -30,5 +30,14 @@ import ReactDOM from 'react-dom'
 //ReactDOM.render(<Tx06 />, document.getElementById('root'))
 
 //父子组件拆分
-import Tx07 from './tx07'
-ReactDOM.render(<Tx07 />, document.getElementById('root'))
+//import Tx07 from './tx07'
+//ReactDOM.render(<Tx07 />, document.getElementById('root'))
+
+//父子组件 父传子 子传父 , 
+//单项数据流 父传子中的state数据只能用，不能改写，改写需要父类传方法到子类，才能在子类中修改
+//import Tx08 from './tx08'
+//ReactDOM.render(<Tx08 />, document.getElementById('root'))
+
+//
+//import Tx09 from './tx09'
+//ReactDOM.render(<Tx09 />, document.getElementById('root'))
