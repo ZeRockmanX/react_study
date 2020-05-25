@@ -1,0 +1,52 @@
+.show_1 {
+  color: #3f00bf;
+}
+.hide_1 {
+  color: #bf0000;
+}
+
+/* opacity 1 不透明 0 透明 */
+.show_2 {
+  opacity: 1;
+  transition: all 1.5s ease-in;
+}
+.hide_2 {
+  opacity: 0;
+  transition: all 1.5s ease-in;
+}
+
+/* opacity https://developer.mozilla.org/zh-CN/docs/Web/CSS/opacity */
+.show_3 {animation:show-item 2s ease-in forwards}
+/*forwards 到最后一帧停止*/
+.hide_3 {animation:hide-item 2s ease-in forwards}
+
+/* 关键帧 */
+@keyframes show-item {
+  0% {
+    opacity: 0;
+    color: blue;
+  }
+  50% {
+    opacity: 0.5;
+    color: pink;
+  }
+  100% {
+    opacity: 1;
+    color: purple;
+  }
+}
+
+@keyframes hide-item {
+  0% {
+    opacity: 1;
+    color: yellow;
+  }
+  50% {
+    opacity: 0.5;
+    color: red;
+  }
+  100% {
+    opacity: 0;
+    color: green;
+  }
+}

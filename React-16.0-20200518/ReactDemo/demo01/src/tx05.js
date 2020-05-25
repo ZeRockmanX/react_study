@@ -2,7 +2,7 @@
 //使用 React.Component代替： import React, { Component } from 'react' 
 import React from 'react'
 // css的引入方法
-import './style.css'
+import './style_05.css'
 
 // 使用默认名Tx05 export 出去，而无需使用 class Tx04 extends Component {} 然后再 export default Tx04出去
 export default class Tx05 extends React.Component {

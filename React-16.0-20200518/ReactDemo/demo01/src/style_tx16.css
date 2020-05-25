@@ -1,0 +1,11 @@
+.CSST-text-enter{opacity: 0;}
+
+.CSST-text-enter-active{opacity: 1;transition:opacity 2000ms;}
+
+.CSST-text-enter-done{opacity: 1;}
+
+.CSST-text-exit{opacity: 1;}
+
+.CSST-text-exit-active{opacity: 0;transition:opacity 2000ms;}
+
+.CSST-text-exit-done{opacity: 0;}
