@@ -8,6 +8,7 @@ class Tx01 extends Component {
     constructor(props) {
         super(props)
         console.log(store.getState())
+        //初始化时state数据从store里面拿
         this.state = store.getState()
         this.changeInputValue = this.changeInputValue.bind(this)
         this.storeChange = this.storeChange.bind(this)
@@ -39,7 +40,6 @@ class Tx01 extends Component {
                         placeholder={this.state.inputValue}
                         sytle={{ width: '200px', marginRight: '10px' }}
                         onChange={this.changeInputValue}
-                        //不用value时，可以不用绑定和订阅
                         value={this.state.inputValue}
                     />
                     <Button type="primary">Add</Button>
