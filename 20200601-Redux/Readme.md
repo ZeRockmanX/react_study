@@ -35,3 +35,6 @@ const store = createStore(
 3. Reducer中 必须是纯函数，不能直接给数字或者new之类可变内容，只能 变量赋值给变量 a=b
 
 06 UI和逻辑分离开
+
+07 把UI变成无状态组件，不用class以及不用继承Component组件，里面是纯函数内容，这样可以提高性能
+
