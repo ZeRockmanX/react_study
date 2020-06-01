@@ -26,6 +26,7 @@ class Tx01 extends Component {
         this.setState(store.getState())
     }
 
+    //分离到actionCreators.js中，并且通过export来给外部调用
     changeInputValue(e) {
         const action = changeInputAction(e.target.value)
         store.dispatch(action)

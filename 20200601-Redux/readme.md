@@ -33,3 +33,5 @@ const store = createStore(
 1. store必须是唯一的，只有一个store空间
 2. 只有store能改变自己的内容，Reducer不能改变 （Reducer里面只能接受state,不能改变state）
 3. Reducer中 必须是纯函数，不能直接给数字或者new之类可变内容，只能 变量赋值给变量 a=b
+
+06 UI和逻辑分离开
