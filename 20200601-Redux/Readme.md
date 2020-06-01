@@ -23,3 +23,5 @@ const store = createStore(
 02 更新store中的数据 state数据从redux获取新的数据并展示
 03 点击功能 input中的数据放到store中的list里面，再将store中更新后的list数据返还给state（setState渲染页面）
 04 list中点击删除项目事件
+05 优化1：将请求的类型变量常量话，这样当常量写错时会报错，而变量不会报错，可以快速定位到错误的地方
+05 优化2：将调用方法统一写到一个文件actionCreators.js中，方便管理和调用
