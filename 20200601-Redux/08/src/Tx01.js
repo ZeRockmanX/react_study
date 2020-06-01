@@ -1,9 +1,12 @@
 import React, { Component } from 'react';
 import 'antd/dist/antd.css'
 import store from './store/index'
-import { changeInputAction, addItemAction, deleteAction, getListThunk } from './store/actionCreators'
+import { changeInputAction, addItemAction, deleteAction, getListAction } from './store/actionCreators'
 import Tx01UI from './Tx01UI'
-
+// 异步工具
+import axios from 'axios'
+// mock API请求
+import mock_ajax_data from './mock_ajax_data'
 
 // ! UI分离，只留下逻辑部分
 class Tx01 extends Component {
@@ -19,9 +22,13 @@ class Tx01 extends Component {
     }
 
     componentDidMount() {
-        // 使用中间件把ajax请求全部放到redux中，这样componentDidMount中就不会臃肿
-        const action = getListThunk()
-        store.dispatch(action)
+        // 异步ajax请求 (mock的数据)
+        axios.get('/get_mock_data')
+            .then((res) => {
+                const data = res.data.data
+                const action = getListAction(data)
+                store.dispatch(action)
+            })
     }
 
     storeChange() {

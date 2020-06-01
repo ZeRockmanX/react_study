@@ -4,6 +4,7 @@ yarn add redux
 yarn add antd 
 yarn add axios
 yarn add mockjs
+yarn add redux-thunk
 install create-react-app demo01
 ### Chrome
 marketing search "redux dev"
@@ -16,7 +17,6 @@ const store = createStore(
 )
 
 ```
-
 ### Redux Flow
 ![avatar](./Redux.jpg)
 
@@ -41,3 +41,9 @@ const store = createStore(
 07 把UI变成无状态组件，不用class以及不用继承Component组件，里面是纯函数内容，这样可以提高性能
 
 08 axios异步请求结合redux (componentDidMount处请求，然后放入store，接着UI取出渲染）
+
+09 Redux-thunk 中间件
+1.配置（同时使用两个中间件（thunk和redux调试软件））
+2.将axios放到thunk中
+使用中间件把ajax请求全部放到redux中，这样componentDidMount中就不会臃肿
+![avatar](./Redux-thunk.jpg)
