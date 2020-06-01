@@ -2,6 +2,8 @@
 yarn add create-react-app
 yarn add redux
 yarn add antd 
+yarn add axios
+yarn add mockjs
 install create-react-app demo01
 ### Chrome
 marketing search "redux dev"
@@ -38,3 +40,4 @@ const store = createStore(
 
 07 把UI变成无状态组件，不用class以及不用继承Component组件，里面是纯函数内容，这样可以提高性能
 
+08 axios异步请求结合redux (componentDidMount处请求，然后放入store，接着UI取出渲染）
