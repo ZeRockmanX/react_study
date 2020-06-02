@@ -5,3 +5,4 @@ yarn add react-redux
 
 ### Study
 01 初始化以及使用react-redux读取store中的数据
+02 react-redux更新store中的数据
